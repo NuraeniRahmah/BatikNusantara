@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <androidx.constraintlayout.widget.ConstraintLayout
+                  xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".DetailActivity"
+    android:background="@drawable/p">
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="BATIK NUSANTARA"
+                android:textColor="@color/colorWhite"
+                android:textSize="13pt"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="Nama Batik"
+                android:textColor="@color/colorWhite"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:text=":"
+                android:textColor="@color/colorWhite"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/txt_nama_batik"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Nama Batiknya"
+                android:textColor="@color/colorWhite"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Asal Batik"
+                android:textColor="@color/colorWhite"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text=":"
+                android:textColor="@color/colorWhite"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView5"
+                app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/txt_asal_batik"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Asal Batiknya"
+                android:textColor="@color/colorWhite"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txt_nama_batik"
+                app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/txt_img_ukir"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_asal_batik" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txt_img_ukir"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <TextView
+            android:id="@+id/txt_ket"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Keterangan"
+            android:textColor="@color/colorWhite"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_img_ukir" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/img_panah"
+                android:layout_width="23dp"
+                android:layout_height="37dp"
+                android:scrollbarSize="20pt"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="23dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="16dp"
+                android:scrollbarSize="20pt"
+                android:src="@drawable/ic_chat_bubble_outline_black_24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                app:layout_constraintStart_toEndOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="23dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:scrollbarSize="20pt"
+        android:src="@drawable/ic_favoriteku_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="23dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="16dp"
+                android:scrollbarSize="20pt"
+                android:src="@drawable/ic_plus_one_black_24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                app:layout_constraintStart_toEndOf="@+id/imageView4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
